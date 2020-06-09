@@ -5,12 +5,6 @@ import { AlertifyService } from 'src/app/_services/alertify.service';
 import { ActivatedRoute } from '@angular/router';
 import { NgxGalleryImage, NgxGalleryOptions, NgxGalleryAnimation } from 'ngx-gallery';
 
-//import { NgxGalleryOptions } from 'ngx-gallery-9/lib/ngx-gallery-options';
-//import { NgxGalleryImage } from 'ngx-gallery-9/lib/ngx-gallery-image.model';
-//import {NgxGalleryAnimation} from 'ngx-gallery-9/lib/ngx-gallery-animation.model';
-
-//import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from '@ngx-gallery';
-
 
 
 @Component({
@@ -24,8 +18,8 @@ export class MemberDetailComponent implements OnInit {
   galleryImages: NgxGalleryImage[];
   constructor(
     private userService: UserService,
-     private alertify: AlertifyService,
-      private route: ActivatedRoute) { }
+    private alertify: AlertifyService,
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.data.subscribe(data => {
